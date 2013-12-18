@@ -19,11 +19,11 @@
 ## Usage
 
 ```javascript
-var coffee = require('gulp-iced-coffee');
+var iced = require('gulp-iced-coffee');
 
 gulp.task('iced', function() {
   gulp.src('./src/*.iced')
-    .pipe(coffee({bare: true}))
+    .pipe(iced({bare: true}))
     .pipe(gulp.dest('./public/'))
 });
 ```
