@@ -1,15 +1,15 @@
-var coffee = require('../');
+var iced = require('../');
 var should = require('should');
-var coffeescript = require('coffee-script');
+var coffeescript = require('iced-coffee-script');
 var gutil = require('gulp-util');
 require('mocha');
 
-describe('gulp-coffee', function() {
-  describe('coffee()', function() {
+describe('gulp-iced-coffee', function() {
+  describe('iced()', function() {
     it('should concat two files', function(done) {
-      var stream = coffee({bare: true});
+      var stream = iced({bare: true});
       var fakeFile = new gutil.File({
-        path: "/home/contra/test/file.coffee",
+        path: "/home/contra/test/file.iced",
         base: "/home/contra/test/",
         cwd: "/home/contra/",
         contents: new Buffer("a = 2")
@@ -32,9 +32,9 @@ describe('gulp-coffee', function() {
     });
 
     it('should emit errors correctly', function(done) {
-      var stream = coffee({bare: true});
+      var stream = iced({bare: true});
       var fakeFile = new gutil.File({
-        path: "/home/contra/test/file.coffee",
+        path: "/home/contra/test/file.iced",
         base: "/home/contra/test/",
         cwd: "/home/contra/",
         contents: new Buffer("if a()\r\n  then huh")
@@ -43,6 +43,7 @@ describe('gulp-coffee', function() {
       var expected = "";
 
       stream.on('error', function(err){
+        console.log("fakeFile.path=", fakeFile.path, "err.message=", err.message);
         err.message.indexOf(fakeFile.path).should.not.equal(-1);
         done();
       });

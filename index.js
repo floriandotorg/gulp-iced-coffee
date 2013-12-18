@@ -1,12 +1,12 @@
 var es = require('event-stream');
-var coffee = require('coffee-script');
+var iced = require('iced-coffee-script');
 var gutil = require('gulp-util');
 var formatError = require('./lib/formatError');
 
 module.exports = function(opt){
   function modifyFile(file, cb){
     try {
-      file.contents = coffee.compile(String(file.contents), opt);
+      file.contents = iced.compile(String(file.contents), opt);
     } catch (err) {
       var newError = formatError(file, err);
       return cb(newError);

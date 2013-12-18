@@ -1,9 +1,9 @@
 {
-  "name": "gulp-coffee",
-  "description": "Compile CoffeeScript files",
+  "name": "gulp-iced-coffee",
+  "description": "Compile IcedCoffeeScript files",
   "version": "1.2.1",
-  "homepage": "http://github.com/wearefractal/gulp-coffee",
-  "repository": "git://github.com/wearefractal/gulp-coffee.git",
+  "homepage": "http://github.com/ccheever/gulp-iced-coffee",
+  "repository": "git://github.com/ccheever/gulp-iced-coffee.git",
   "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
   "main": "./index.js",
   "keywords": [
@@ -11,8 +11,8 @@
   ],
   "dependencies": {
     "event-stream": "~3.0.18",
-    "coffee-script": "~1.6.3",
-    "gulp-util": "~1.2.0"
+    "gulp-util": "~1.2.0",
+    "iced-coffee-script": "~1.6.3-i"
   },
   "devDependencies": {
     "mocha": "*",
@@ -27,7 +27,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/wearefractal/gulp-coffee/raw/master/LICENSE"
+      "url": "http://github.com/ccheever/gulp-iced-coffee/raw/master/LICENSE"
     }
   ]
 }
