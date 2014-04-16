@@ -3,7 +3,7 @@
 ## Information
 
 <table>
-<tr> 
+<tr>
 <td>Package</td><td>gulp-iced-coffee</td>
 </tr>
 <tr>
@@ -30,7 +30,7 @@ gulp.task('iced', function() {
 
 ## Options
 
-The options object supports the same options as the standard CoffeeScript compiler 
+The options object supports the same options as the standard IcedCoffeeScript compiler
 
 ## LICENSE
 

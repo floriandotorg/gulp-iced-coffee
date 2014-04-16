@@ -1,18 +1,20 @@
 {
   "name": "gulp-iced-coffee",
   "description": "Compile IcedCoffeeScript files",
-  "version": "1.2.1",
-  "homepage": "http://github.com/ccheever/gulp-iced-coffee",
-  "repository": "git://github.com/ccheever/gulp-iced-coffee.git",
-  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "version": "1.2.2",
+  "homepage": "http://github.com/floriandotorg/gulp-iced-coffee",
+  "repository": "git://github.com/floriandotorg/gulp-iced-coffee.git",
+  "author": "Florian Kaiser <mail@floriankaiser.org> (http://floriankaiser.org/)",
   "main": "./index.js",
   "keywords": [
     "gulpplugin"
   ],
   "dependencies": {
-    "event-stream": "~3.0.18",
-    "gulp-util": "~1.2.0",
-    "iced-coffee-script": "~1.6.3-i"
+    "event-stream": "^3.0.20",
+    "gulp-util": "^1.2.0",
+    "iced-coffee-script": "^1.6.3-j",
+    "mocha": "^1.18.2",
+    "vinyl": "^0.2.3"
   },
   "devDependencies": {
     "mocha": "*",
