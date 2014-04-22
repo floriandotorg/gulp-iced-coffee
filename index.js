@@ -21,6 +21,7 @@ module.exports = function (opt) {
         header: opt.header != null ? !! opt.header : false,
         sourceMap: opt.sourceMap != null ? !! opt.sourceMap : false,
         sourceRoot: opt.sourceRoot != null ? !! opt.sourceRoot : false,
+        runtime: opt.runtime != null ? opt.runtime : null,
         filename: file.path,
         sourceFiles: [path.basename(file.path)],
         generatedFile: path.basename(dest)
